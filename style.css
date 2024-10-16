@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@100;300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', 'sans-serif';
+}
+
+body {
+    background: maroon;
+    color: #D0D0D0
+}
+
+.header {
+    position: fixed;
+    top: 0;  
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: .3s;
+
+}
+
+.navbar a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .35s
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: yellow;
+}
+
+.home {
+    height: 100vh;
+    background: url('Rotating_earth_animated_transparent.gif') no-repeat;
+    background-size: 80vh;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    background: transparent;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 5s;
+
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.2;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    background: transparent
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 7s;
+    z-index: 2;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration:dashed;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:hover {
+    color: white;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: white;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: white;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 9s;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid yellow;
+    border-radius: 25%;
+    font-size: 35px;
+    color: yellow;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    z-index: -1;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 1000px;
+    height: 100%;
+    background: transparent;
+    border-radius: 30px;
+    transition: 3s;
+    
+}
+
+.about {
+    height: 100vh;
+    background: url('ataberk_ayanlar.png') no-repeat;
+    background-size: 60vh;
+    background-position:right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content {
+    background: transparent;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.about-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 5s;
+
+}
+
+.about-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.2;
+}
+
+.about-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+
+}
+
+.about-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 9s;
+    z-index: 2;
+}
+
+.about-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid yellow;
+    border-radius: 25%;
+    font-size: 35px;
+    color: yellow;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.antalya {
+    position: relative;
+    background-position: right;
+    width: 350px;
+}
+
+.ankara {
+    position: relative;
+    background-position: right;
+    width: 350px;
+}
+
+.geomatik {
+    position: relative;
+    background-position: right;
+    width: 350px;
+}
+
+.hobbies {
+    height: 90vh;
+    background: url('fb_jersey.jpg') no-repeat;
+    background-size: 50vh;
+    background-position:right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hobby-content {
+    background: transparent;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.hobby-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hobby-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 5s;
+
+}
+
+.hobby-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.2;
+}
+
+.hobby-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+
+}
+
+.hobby-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: maroon;
+    animation: showRight 1s ease forwards;
+    animation-delay: 9s;
+    z-index: 2;
+}
+
+.hobby-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid yellow;
+    border-radius: 25%;
+    font-size: 35px;
+    color: yellow;
+    text-decoration: none;
+    z-index: 1;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}

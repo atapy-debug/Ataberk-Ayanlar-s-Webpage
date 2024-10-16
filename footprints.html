@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,
+    initial-scale=1.0">
+    <title><title>Footprints</title>/
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Ataberk Ayanlar</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Hobbies</a>
+            <a href="#" class="active">Footprints</a>
+        </nav>
+
+        
+
+        <div class="buttons">
+          <button>
+              <i class="fas fa-bars"></i>
+          </button>
+  
+        </div>
+    </header>
+
+    <section class="footprints">
+        <div class="footprints">
+            <h1>The Places I Have Been To</h1>
+            <p>Here are the cities I have been to. The time of accomodation
+                differs according to each city however it was really joyful
+                for me to visit most of them.<p>
+
+        </div>
+
+    </section>
+
+    <!DOCTYPE html>
+             <html lang="tr">
+             <head>
+                 <meta charset="UTF-8">
+                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <title>OpenLayers Harita</title>
+                 <link rel="stylesheet" href="https://openlayers.org/en/v6.9.0/css/ol.css" />
+                 <script src="https://openlayers.org/en/v6.9.0/build/ol.js"></script>
+                 <style>
+                     #map {
+                         width: 100%;
+                         height: 500px;
+                     }
+                 </style>
+             </head>
+             <body>
+                 <h1>Footprints</h1>
+                 <div id="map"></div>
+             
+                 <script>
+                     const map = new ol.Map({
+                         target: 'map',
+                         layers: [
+                             new ol.layer.Tile({
+                                 source: new ol.source.OSM()
+                             }),
+                             new ol.layer.Vector({
+                                 source: new ol.source.Vector({
+                                     features: [
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([30.6954, 36.9092])),
+                                             name: 'Antalya'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([28.3682, 37.2153])),
+                                             name: 'Muğla'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([32.8597, 39.9334])),
+                                             name: 'Ankara'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([35.32502, 36.98542])),
+                                             name: 'Adana'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([30.537846, 38.756217])),
+                                             name: 'Afyonkarahisar'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([27.845571, 37.838044])),
+                                             name: 'Aydin'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([27.885361, 39.644878])),
+                                             name: 'Balikesir'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([29.979159, 40.142960])),
+                                             name: 'Bilecik'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([31.607052, 40.732006])),
+                                             name: 'Bolu'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([30.282248, 37.718293])),
+                                             name: 'Burdur'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([29.066148, 40.182816])),
+                                             name: 'Bursa'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([26.408220, 40.146777])),
+                                             name: 'Canakkale'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([34.953694, 40.549853])),
+                                             name: 'Corum'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([29.096246, 37.783026])),
+                                             name: 'Denizli'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([40.224899, 37.9137])),
+                                             name: 'Diyarbakir'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([39.5, 39.75])),
+                                             name: 'Erzincan'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([30.525608, 39.766724])),
+                                             name: 'Eskisehir'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([37.378159, 37.062931])),
+                                             name: 'Gaziantep'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([36.160045, 36.202621])),
+                                             name: 'Hatay'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([30.553612, 36.160045])),
+                                             name: 'Isparta'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([34.620414, 36.810307])),
+                                             name: 'Mersin'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([29.033115, 41.046419])),
+                                             name: 'Istanbul'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([27.142797, 38.423652])),
+                                             name: 'Izmir'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([35.489122, 38.722100])),
+                                             name: 'Kayseri'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([34.160577, 39.146209])),
+                                             name: 'Kirsehir'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([29.940659, 40.765600])),
+                                             name: 'Kocaeli'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([32.491991, 37.872817])),
+                                             name: 'Konya'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([29.985721, 39.419993])),
+                                             name: 'Kutahya'
+                                         }),
+                                         new ol.Feature({
+                                             geometry: new ol.geom.Point(ol.proj.fromLonLat([38.333476, 38.355390])),
+                                             name: 'Malatya'
+                                         }),
+                                         new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([27.429533, 38.614027])),
+                                            name: 'Manisa'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([36.926934, 37.582047])),
+                                            name: 'Kahramanmaras'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([40.732555, 37.313051])),
+                                            name: 'Mardin'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([41.489878, 38.732415])),
+                                            name: 'Mus'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([30.403235, 40.773626])),
+                                            name: 'Sakarya'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([36.33812, 41.28157])),
+                                            name: 'Samsun'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([38.797901, 37.1586])),
+                                            name: 'Sanliurfa'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([29.404976, 38.678883])),
+                                            name: 'Usak'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([33.222315, 37.181200])),
+                                            name: 'Karaman'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([33.5, 39.849998])),
+                                            name: 'Kirikkale'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([32.338396, 41.633178])),
+                                            name: 'Bartin'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([29.268905, 40.657659])),
+                                            name: 'Yalova'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([32.629601, 41.200069])),
+                                            name: 'Karabuk'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([31.159454, 40.839377])),
+                                            name: 'Duzce'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([23.3167, 42.6972])),
+                                            name: 'Sofia'
+                                        }),
+                                        new ol.Feature({
+                                            geometry: new ol.geom.Point(ol.proj.fromLonLat([24.751, 42.1434])),
+                                            name: 'Plovdid'
+                                        })
+                                     ]
+                                 }),
+                                 style: new ol.style.Style({
+                                     image: new ol.style.Icon({
+                                         anchor: [0.5, 1],
+                                         src: 'https://openlayers.org/en/v6.9.0/examples/data/icon.png'
+                                     })
+                                 })
+                             })
+                         ],
+                         view: new ol.View({
+                             center: ol.proj.fromLonLat([32.0000, 40.0000]), 
+                             zoom: 6
+                         })
+                     });
+                 </script>
+             </body>
+             </html>
+
+</body> 
