@@ -61,7 +61,7 @@ body {
 
 .home {
     height: 100vh;
-    background: url('Rotating_earth_animated_transparent.gif') no-repeat;
+    background: url('images/Rotating_earth_animated_transparent.gif') no-repeat;
     background-size: 80vh;
     background-position: right;
     display: flex;
@@ -273,7 +273,7 @@ body {
 
 .about {
     height: 100vh;
-    background: url('ataberk_ayanlar.png') no-repeat;
+    background: url('images/ataberk_ayanlar.png') no-repeat;
     background-size: 60vh;
     background-position:right;
     display: flex;
@@ -376,7 +376,7 @@ body {
 
 .hobbies {
     height: 90vh;
-    background: url('fb_jersey.jpg') no-repeat;
+    background: url('images/fb_jersey.jpg') no-repeat;
     background-size: 50vh;
     background-position:right;
     display: flex;
